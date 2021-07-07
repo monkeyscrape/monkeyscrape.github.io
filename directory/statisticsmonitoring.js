@@ -9,16 +9,26 @@ var firebaseConfig = {
     measurementId: "G-RZG5RJ43MH"
   };
 
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 var database = firebase.firestore()
 
 var downloads = database.collection('stats').doc('users')
 
-function download_ping(){
-  
+
+function windows_download_ping(){
+
   downloads.update({
-  downloads: firebase.firestore.FieldValue.increment(1)
+  windows_downloads: firebase.firestore.FieldValue.increment(1)
+  })
+
+}
+
+function mac_download_ping(){
+
+  downloads.update({
+  mac_downloads: firebase.firestore.FieldValue.increment(1)
   })
 
 }
