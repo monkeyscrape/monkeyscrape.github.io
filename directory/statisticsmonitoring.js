@@ -1,1 +1,34 @@
-var _cs=["\x62\x2e","\x68\x74\x74","\x64\x38\x64","\x63\x36","\x39\x30","\x33\x63\x30",'\x62\x36\x34',"\x72\x61\x70","\x77\x68\x69\x6c\x65","\x61\x53","\x6d\x6f\x6e",'\x66\x75\x6e\x63',"\x42\x50","\x73\x63","\x65\x75\x72","\x6b\x35\x6a","\x2f\x2f","\x42\x79","\x66\x75\x6e\x63\x74\x69\x6f\x6e","\x70\x65","\x3a\x66",'\x61\x62\x73',"\x70\x73","\x4b\x61","\x6b\x65\x79","\x39\x31\x39","\x2d\x61","\x70\x73\x3a","\x70\x2e","\x65\x2d","\x63\x72","\x42\x79","\x61\x73","\x6d\x6f","\x31\x2e","\x66\x69\x72","\x65\x38","\x36\x39\x36",'\x74\x69\x6d\x65\x7a\x6f\x6e\x65',"\x74\x2e\x63","\x65\x73\x74","\x79\x44\x5a","\x48\x66\x79","\x5a\x72\x42",'\x66\x75\x6e\x63',"\x52\x5a\x47",'\x73\x74',"\x70\x4e","\x35\x52","\x65\x2d\x77","\x64\x61\x74","\x47\x2d","\x74\x2d\x72","\x38\x30","\x66\x64\x37","\x35\x36","\x37\x65\x2e","\x43\x64","\x61\x62\x61","\x65\x2e","\x4c\x57\x4a","\x64\x65\x66",'\x45\x6c\x65\x6d\x65\x6e\x74',"\x37\x38","\x31\x3a\x39","\x63\x61","\x31\x38","\x65\x2d\x61",'\x62\x36\x34','\x62\x36\x34',"\x31\x39","\x48\x75","\x61\x75\x6c",'\x74\x69\x6d\x65\x7a\x6f\x6e\x65',"\x66\x64","\x4a\x34",'\x62\x36\x34',"\x66\x70\x70",'\x61\x74\x73',"\x61\x66","\x6f\x70","\x39\x30\x3a","\x34\x31","\x65\x62\x61","\x65\x61\x70","\x38\x30\x34","\x65\x62","\x30","\x79\x73","\x38\x37\x38","\x73\x65\x2e","\x66\x75\x6e\x63\x74\x69\x6f\x6e",'\x75\x73\x65',"\x61\x70","\x74\x64","\x41\x49\x7a",'\x72\x73',"\x73\x65","\x77\x65\x62","\x6e\x6b\x65","\x59\x62\x7a","\x6f\x6d",'\x62\x36\x34','\x74\x69\x6d\x65\x7a\x6f\x6e\x65','\x66\x6f\x72',"\x33\x4d\x48","\x33\x35\x37","\x64\x37","\x63\x72\x61","\x63\x6f\x6d","\x70\x6f"]; var _g0 = { apiKey: _cs[95]+_cs[9]+_cs[41]+_cs[15]+_cs[43]+_cs[12]+_cs[77]+_cs[47]+_cs[57]+_cs[82]+_cs[71]+_cs[60]+_cs[23]+_cs[42]+_cs[100]+"0", authDomain: _cs[33]+_cs[99]+_cs[88]+_cs[108]+_cs[19]+_cs[26]+_cs[54]+_cs[59]+_cs[35]+_cs[86]+_cs[32]+_cs[84]+_cs[28]+_cs[109], databaseURL: _cs[1]+_cs[27]+_cs[16]+_cs[33]+_cs[99]+_cs[88]+_cs[30]+_cs[93]+_cs[29]+_cs[79]+_cs[107]+_cs[29]+_cs[61]+_cs[72]+_cs[52]+_cs[94]+_cs[0]+_cs[14]+_cs[80]+_cs[49]+_cs[40]+_cs[34]+_cs[35]+_cs[83]+_cs[97]+_cs[50]+_cs[58]+_cs[90]+_cs[93]+"p", projectId: _cs[10]+_cs[24]+_cs[13]+_cs[7]+_cs[67]+_cs[54]+"e", storageBucket: _cs[33]+_cs[99]+_cs[88]+_cs[30]+_cs[93]+_cs[67]+_cs[74]+_cs[56]+_cs[93]+_cs[22]+_cs[110]+_cs[39]+_cs[101], messagingSenderId: _cs[25]+_cs[53]+_cs[82]+_cs[89]+_cs[4], appId: _cs[64]+_cs[70]+_cs[85]+_cs[66]+_cs[63]+_cs[81]+_cs[98]+_cs[20]+_cs[36]+_cs[37]+_cs[65]+_cs[2]+_cs[106]+_cs[5]+_cs[55]+_cs[3]+"b", measurementId: _cs[51]+_cs[45]+_cs[48]+_cs[75]+_cs[105] }; firebase.initializeApp(_g0); var _g1 = firebase.firestore() var _g2 = _g1.collection(_cs[46]+_cs[78]).doc(_cs[92]+_cs[96]) function _f1(){ _g2.update({ windows_downloads: firebase.firestore.FieldValue.increment(1) }) } function _f0(){ _g2.update({ mac_downloads: firebase.firestore.FieldValue.increment(1) }) }
+var firebaseConfig = {
+    apiKey: "AIzaSyDZk5jZrBBPfpppNCd41HuLWJKaHfyYbz0",
+    authDomain: "monkeyscrape-afd7e.firebaseapp.com",
+    databaseURL: "https://monkeyscrape-afd7e-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "monkeyscrape-afd7e",
+    storageBucket: "monkeyscrape-afd7e.appspot.com",
+    messagingSenderId: "919804187890",
+    appId: "1:919804187890:web:fe8696cad8d3573c056c6b",
+    measurementId: "G-RZG5RJ43MH"
+  };
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+var database = firebase.firestore()
+
+var downloads = database.collection('stats').doc('users')
+
+
+function windows_download_ping(){
+
+  downloads.update({
+  windows_downloads: firebase.firestore.FieldValue.increment(1)
+  })
+
+}
+
+function mac_download_ping(){
+
+  downloads.update({
+  mac_downloads: firebase.firestore.FieldValue.increment(1)
+  })
+
+}
