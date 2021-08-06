@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Tutorial | MonkeyScrape</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+<link rel="icon" type="image/png" href="webfavicon.png">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 10px;
+        text-align: left;    
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="features.css" rel="stylesheet">
+    
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div style="padding-left: 30px" class="container-fluid">
+      <a class="navbar-brand" href="index.html">MonkeyScrape</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mission.html">My Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Tutorial/Documentation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <h2 class="mt-5">Tutorial:</h2>
+    <ul>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Setting up">Setting up</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Choose URL">Choose URL</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Open Link">Open Link</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Get Text">Get Text</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Click button">Click button</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Delete element">Delete element</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Wait time">Wait time</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Go to previous page">Go to previous page</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Write text to input box">Write text to input box</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Save to a variable">Save to a variable</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Append to a variable">Append to a variable</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Looping">Looping</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Output to .txt">Output to .txt</a></p></li>
+    <li><p class="lead" style="font-weight:400;font-size:20px"><a href="#Output to .json">Output to .json</a></p></li>
+    </ul>
+
+
+    <br id="Setting up">
+    <br>
+    <br>
+    <div>
+    <h2 >Setting up</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">Install the .zip file for your appropriate OS (operating system). Then, unzip the file. Don't remove any files outside any folders. Ensure that the application remains within the folder so that it can access ChromeDriver correctly. Also, do not rename any folders stored next to the application.<br>To start using the software, simply open the MonkeyScrape application.</p>
+    </div>   
+    
+    <br id="Choose URL">
+    <br>
+    <br>
+    <div>
+    <h2 >Choose URL</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will allow you to enter a URL for you to navigate the chromedriver window to a chosen website. This will occur when the script reaches this command. Simply enter the entire address (begins with http) or you can start with "www". By starting with "www", "https" will be used instead of "http" because of improved security for yourself.</p>
+    </div>
+
+
+    <br id="Open Link">
+    <br>
+    <br>
+
+    <div>
+    <h2>Open Link</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will allow you to paste the XPATH of an element which has a link attached to it. The program will then redirect the chromedriver to this link when the script reaches this command. For example, &lt;a&gt; tags commonly have something called 'href'. This 'href' redirects your browser to a link that has been added by the programmer of the website.</p>
+    </div>
+
+    <br id="Get Text">
+    <br>
+    <br>
+
+    <div>
+    <h2>Get Text</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will allow you to enter the XPATH of an element you wish to copy text from. When the script reaches this command, the text from the given element will be temporarily stored. It is recommended that you follow this command with <a href="#Save to a variable">Save to a variable</a> or <a href="#Append to a variable">Append to a variable</a> in order to not lose your text. When this command is repeated, it will overwrite text stored temporarily.</p>
+    </div>
+
+    <br id="Click button">
+    <br>
+    <br>
+
+    <div>
+    <h2 >Click button</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will allow you to enter the XPATH of the element you wish to click. It is not reserved to buttons only and can click on any element when the script reaches this command.</p>
+    </div>
+
+    <br id="Delete element">
+    <br>
+    <br>
+
+    <div>
+    <h2 >Delete element</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will allow you to enter the XPATH of an element you wish to delete. When deleting elements with child elements nested, the element and child elements will all be deleted. This command can be quite helpful when scraping a list of items for example.<br>Let's say you need to scrape the following data shown below.</p>
+    <table style="border: 1px solid black; ">
+      <tr>
+        <th>Product</th>
+        <th>Price</th> 
+        <th>Stock</th>
+      </tr>
+      <tr>
+        <td>Towel</td>
+        <td>$5.00</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Blanket</td>
+        <td>$10.00</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Plates</td>
+        <td>$15.00</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+    </table>
+    <br>
+    <p class="lead" style="font-weight:400;font-size:20px">Let's say that this is a small excerpt from a website with thousands of more products. It would take a long time to get the XPATH for each item. Therefore, we can use a cool trick to save us a lot of time.</p>
+    <br>
+    <p class="lead" style="font-weight:400;font-size:20px">We want to get all of the products from this website. So what we do is get the XPATH of the first item in a list or table. The XPATH will look something like this: "/html/body/main/div/div[6]/table/tbody/tr[2]/td[1]". This XPATH is directing to the cell containing "Towel" (highlighted below). We can copy this text and save it to a variable.</p>
+    <table style="border: 1px solid black; ">
+      <tr>
+        <th>Product</th>
+        <th>Price</th> 
+        <th>Stock</th>
+      </tr>
+      <tr>
+        <td style="background-color:#FF0000">Towel</td>
+        <td>$5.00</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Blanket</td>
+        <td>$10.00</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Plates</td>
+        <td>$15.00</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+    </table>
+    <br>
+    
+    <p class="lead" style="font-weight:400;font-size:20px">Now, we read from right to left and look for square brackets within our XPATH. Within the given XPATH, we have "td[1]", "tr[2]", and "div[6]". A quick Google search (for example "td html tag" or "div html tag") would show us that we want to focus on "tr" since it stands for table row. In other words, it is the row we wish to remove. By removing it, we can push the second row up to fill in the gap of the first row. If we delete the first row, the outcome is shown below.</p>
+    <table style="border: 1px solid black; ">
+      <tr>
+        <th>Product</th>
+        <th>Price</th> 
+        <th>Stock</th>
+      </tr>
+      <tr>
+        <td style="background-color:#FF0000">Blanket</td>
+        <td>$10.00</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Plates</td>
+        <td>$15.00</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+    </table>
+    <br>
+    <p class="lead" style="font-weight:400;font-size:20px">As you can see, the highlighted section is still at the top of the table. This is because the XPATH will always point to its given position. Therefore, instead of changing the XPATH, we can adapt the website's layout to fit the current needs. Don't worry, this is all done locally and it doesn't affect other users' experiences.<br><br>By using a loop, we can repetitively get these commands to repeat. This can save us a lot of time when it comes to large chunks of data. This trick often works because programmers (especially in large companies) need some kind of organisation with their websites. There's often a pattern you can figure out by looking at their code. This example can be repeated with e-commerce websites and even video streaming platforms.</p>
+
+    </div>
+
+    <br id="Wait time">
+    <br>
+    <br>
+
+    <div>
+    <h2>Wait time</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will allow the chromedriver window to wait for a given amount of time. This can be useful if you need certain portions of the website to load in, or if you're waiting for a certain thing to occur. On execution of this command, any automated interaction will be halted until the given time has elapsed.</p>
+    </div>
+
+    <br id="Go to previous page">
+    <br>
+    <br>
+
+    <div>
+    <h2>Go to previous page</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will return to the previous page. Not much for this one.</p>
+    </div>
+
+    <br id="Write text to input box">
+    <br>
+    <br>
+
+    <div>
+    <h2>Write text to input box</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will ask for the XPATH of an input box, for the text you want to enter, and a code to press ENTER or TAB. For the code, you can leave it empty (so that no button will be pressed after inputting the text), or you can enter some text. There is a code next to each button (uE007 for Enter and uE004 for Tab). If you decide to enter a code, the appropriate button will be pressed.</p>
+    </div>
+
+    <br id="Save to a variable">
+    <br>
+    <br>
+
+    <div>
+    <h2>Save to a variable</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will allow you to save text to a given variable. If this variable doesn't exist, then it creates one and save it to this new variable. If this variable already exists, then it overwrites it. Saving to a variable overwrites anything stores.</p>
+    </div>
+
+    <br id="Append to a variable">
+    <br>
+    <br>
+
+    <div>
+    <h2>Append to a variable</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will allow you to either add to an existing variable, or create a variable and add to it. This can store multiple text items without overwriting. For example, you can create a price variable and append different prices to it using this command.</p>
+    </div>
+
+    <br id="Looping">
+    <br>
+    <br>
+
+    <div>
+    <h2>Looping</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This is achieved by encapsulating commands within the Start Loop and End Loop commands. The start loop command will allow you to select the number of loops you wish to execute.<br><br>NOTE: DO NOT USE A HIGH NUMBER OF LOOPS AS DAMAGE TO A COMPUTER IS POSSIBLE. If this is unavoidable, try splitting the loop into smaller loops.</p>
+    </div>
+
+    <br id="Output to .txt">
+    <br>
+    <br>
+
+    <div>
+    <h2>Output to .txt</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will ask for variables to output to a text file. This text file will be new and stored within the "unsaved files" folder. It will be given a generic name to allow you to rename it.</p>
+    </div>
+
+    <br id="Output to .json">
+    <br>
+    <br>
+
+    <div>
+    <h2>Output to .json</h2>
+    <p class="lead" style="font-weight:400;font-size:20px">This command will ask for variables to output to a json file. This json file will be new and stored within the "unsaved files" folder. It will be given a generic name to allow you to rename it.</p>
+    </div>
+
+    <br>
+    <br>
+    
+    </div>
+</main>
+
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
