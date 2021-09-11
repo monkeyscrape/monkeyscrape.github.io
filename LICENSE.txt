@@ -1,0 +1,26 @@
+MonkeyScrape License
+====================
+
+Except where otherwise noted, all of the documentation and software included in the MonkeyScrape
+software is copyrighted by Rayan Mansur.
+
+Copyright (©) 2021 Rayan Mansur. All rights reserved.
+
+This software is provided "as-is," without any express or implied warranty. In no event shall the
+author be held liable for any damages (including but not limited to damages of loss of goodwill, 
+work stoppage, computer failure or malfunction, or any and all other commercial damages or losses)
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial
+applications, and to redistribute it, provided that the following conditions are met:
+
+1. All redistributions of files must retain all copyright notices that are currently in
+   place, and this list of conditions without modification.
+
+2. The origin of this software must not be misrepresented; you must not claim that you wrote the
+   original software. If you use this software to create a product, an acknowledgment in the
+   product documentation would be appreciated but is not required.
+
+3. All redistributions of files should be free of charge.
+
+4. The work is not to be reverse-engineered, decompiled, disassembled, or modified.
